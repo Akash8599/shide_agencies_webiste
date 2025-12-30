@@ -28,7 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 3D Scroll Reveal Animation
+    // 3D Scroll Reveal Animation - DISABLED (Content visible immediately)
+    /*
     const revealItems = document.querySelectorAll('.fade-in-3d');
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -42,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     revealItems.forEach(item => revealObserver.observe(item));
+    */
 
     // Close mobile menu when a link is clicked
     document.querySelectorAll('.nav-links a').forEach(link => {
