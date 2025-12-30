@@ -446,10 +446,11 @@ img {
 
 /* Animations */
 .fade-in {
-    opacity: 0;
+    opacity: 1;
+    /* Was 0 */
     transform: translateY(0);
     /* REMOVED MOVEMENT to fix scrollbar */
-    animation: fadeUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    /* animation: fadeUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; */
 }
 
 .delay-1 {
@@ -603,9 +604,12 @@ img {
 
 /* High-End 3D Animations */
 .fade-in-3d {
-    opacity: 0;
-    transform: translateY(50px) rotateX(15deg) scale(0.95);
-    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    opacity: 1;
+    /* Was 0 */
+    transform: none;
+    /* Was translateY(50px) rotateX(15deg) scale(0.95) */
+    transition: none;
+    /* Was all 0.8s ... */
     backface-visibility: hidden;
 }
 
